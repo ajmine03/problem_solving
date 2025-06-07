@@ -7,4 +7,11 @@ Expected Output :
 The Binary Number : 1010101
 The equivalent Decimal Number : 85*/
 
-###
+#include<stdio.h>
+int main()
+{
+    int bin , dec ; 
+    
+    
+
+}
