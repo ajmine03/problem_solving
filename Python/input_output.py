@@ -1,0 +1,5 @@
+print("input todo")
+user_input = input("enter something: ")
+print("You entered:", user_input)
+print("output todo")
+print("End of script")
