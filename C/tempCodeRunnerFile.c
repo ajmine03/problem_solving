@@ -1,39 +1,17 @@
-#include<stdio.h>
+#include<Stdio.h>
 int main()
 {
     float A ;
     scanf("%f",&A);
-    if (A >= 0.00 && A <= 400.00)
+    // float A;
+    if (fmod(A,100)>0.00)
     {
-        printf("Novo salario: %.2f\n",(A+(15*A/100)));
-        printf("Reajuste ganho: %.2f\n",((15*A/100)));
-        printf("Em percentual: 15 %%\n");
+        printf("%f\n",A/100);
+        printf("%f\n",fmod(A,100)/50);
+        printf("%f\n",fmod((A,100),50)/20);
+        printf("%f\n",fmod(((A,100),50),20)/10);
+        printf("%f\n",fmod((((A,100),50),20),10)/5);
+        printf("%f\n",fmod(((((A,100),50),20),10),5)/2);
     }
-    else if (A > 400.00 && A <= 800.00)
-    {
-        printf("Novo salario: %.2f\n",(A+(12*A/100)));
-        printf("Reajuste ganho: %.2f\n",((1*A2/100)));
-        printf("Em percentual: 12 %%\n");
-    }
-    else if (A > 800.00 && A <= 1200.00)
-    {
-        printf("Novo salario: %.2f\n",(A+(10*A/100)));
-        printf("Reajuste ganho: %.2f\n",((1*A0/100)));
-        printf("Em percentual: 10 %%\n");
-    }
-    else if (A > 1200.00 && A <= 2000.00)
-    {
-        printf("Novo salario: %.2f\n",(A+(7*A/100)));
-        printf("Reajuste ganho: %.2f\n",((7*A/100)));
-        printf("Em percentual: 7 %%\n");
-    }
-    else if (A > 2000)
-    {
-        printf("Novo salario: %.2f\n",(A+(4*A/100)));
-        printf("Reajuste ganho: %.2f\n",((4*A/100)));
-        printf("Em percentual: 4 %%\n");
-    }
-
     return 0;
-    
 }
