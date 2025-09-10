@@ -8,10 +8,13 @@ int main()
         for (int i = 1; i <= Y; i++)
         {
 
-            printf("%d ", i);
             if (i % X == 0)
             {
-                printf("\n");
+                printf("%d\n", i);
+            }
+            else
+            {
+                printf("%d ", i);
             }
         }
     }
