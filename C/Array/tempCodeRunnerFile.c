@@ -1,0 +1,1 @@
+printf("The smallest is %d\n",smallest);
