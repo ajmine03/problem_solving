@@ -3,7 +3,7 @@
 int main()
 {
     long long A, B;
-    while (scanf("%d %d", &A, &B) == 2)
+    while (scanf("%lld %lld", &A, &B) == 2)
     {
         printf("%lld\n", llabs(A - B));
     }
