@@ -2,27 +2,30 @@
 #include <math.h>
 int main()
 {
-    int X;
+    int X;   
     scanf("%d", &X);
     int A;
     for (int i = 0; i < X; i++)
     {
         scanf("%d", &A);
-        if (A == 2 || A == 3 || A == 5 || A == 7)
+         int count = 0;
+        for (int i = 1; i <= 10000000; i++)
         {
-            printf("%d eh primo\n", A);
-        }
-        else if (A % 2 == 0 || A % 3 == 0 || A % 5 == 0 || A % 7 == 0)
-        {
-            printf("%d nao eh primo\n", A);
-        }
-        else if ((sqrt(A) == floor(sqrt(A))))
-        {
-            printf("%d nao eh primo\n", A);
-        }
-        else
-        {
-            printf("%d eh primo\n", A);
+            if (A % i == 0)
+            {
+                count++;
+            }
+            if (count > 2)
+            {
+                printf("%d nao eh primo\n", A);
+                
+            }
+            else
+            {
+                printf("%d eh primo\n", A);
+                
+            }
+            
         }
     }
 
